@@ -34,8 +34,8 @@ public class Login extends AppCompatActivity {
         Entrar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(Login.this,"BEM VIND@ DE VOLTA!", Toast.LENGTH_SHORT).show();
-                startActivity(new Intent(Login.this, Identificacao.class));
+                //Toast.makeText(Login.this,"OLÁ!", Toast.LENGTH_SHORT).show();
+                startActivity(new Intent(Login.this, SuasMaterias.class));
             }
         });
     }

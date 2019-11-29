@@ -44,7 +44,7 @@ public class Identificacao extends AppCompatActivity {
 
                 }
 
-                startActivity(new Intent(Identificacao.this, Camera.class));
+                startActivity(new Intent(Identificacao.this, SuasMaterias.class));
             }
         });
 

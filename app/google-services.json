@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "370836063222",
+    "firebase_url": "https://prototipoblank.firebaseio.com",
+    "project_id": "prototipoblank",
+    "storage_bucket": "prototipoblank.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:370836063222:android:d9cec0e0eaf735d2c6fdd7",
+        "android_client_info": {
+          "package_name": "com.example.prototipoblank"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "370836063222-iabcnkl5nibb9rouq0kgoivq200rhleh.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.prototipoblank",
+            "certificate_hash": "e2a8cc8e7ef5f16b2a988bfcdc5584f958c70a0c"
+          }
+        },
+        {
+          "client_id": "370836063222-i7q4uqrblvc1tgsji928ptk62ibme160.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDW7Mu4P63YnhTeH4iU9_pU6y-KPDJasN4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "370836063222-i7q4uqrblvc1tgsji928ptk62ibme160.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
