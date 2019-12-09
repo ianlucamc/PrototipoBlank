@@ -2,7 +2,9 @@ package com.example.prototipoblank;
 
 import com.orm.SugarRecord;
 
-public class Pessoa extends SugarRecord {
+import java.io.Serializable;
+
+public class Pessoa extends SugarRecord implements Serializable {
 
     private String nome;
     private String email;
@@ -26,4 +28,5 @@ public class Pessoa extends SugarRecord {
     public void setEmail(String email) {
         this.email = email;
     }
+
 }

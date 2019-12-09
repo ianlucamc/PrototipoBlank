@@ -2,7 +2,9 @@ package com.example.prototipoblank;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -21,6 +23,8 @@ public class Cadastro extends AppCompatActivity {
     private EditText Senha;
 
     private Button Cadastrar;
+
+    private Pessoa pessoa;
 
     private TextView Entrar;
 
@@ -42,22 +46,29 @@ public class Cadastro extends AppCompatActivity {
 
         Entrar = (TextView) findViewById(R.id.entrar);
 
+        SharedPreferences sharedPreferences = getSharedPreferences(getString(R.string.idpessoa), Context.MODE_PRIVATE);
+        final String result = sharedPreferences.getString(getString(R.string.idpessoa), "");
+
         Cadastrar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
 
-                //Obj de Pessoa + Receber os dados dos campos de texto
                 Pessoa p = new Pessoa();
+
+                //Obj de Pessoa + Receber os dados dos campos de texto
+
                 p.setNome(Nome.getText().toString());
                 p.setEmail(Email.getText().toString());
 
-                //Salvar no bd e limpar campos
                 p.save();
-                Nome.setText("");
-                Email.setText("");
 
                 Toast.makeText(Cadastro.this,"Olá, "+p.getNome()+"!", Toast.LENGTH_SHORT).show();
-                startActivity(new Intent(Cadastro.this, Identificacao.class));
+
+                Nome.setText("");
+                Email.setText("");
+                Senha.setText("");
+
+                startActivity(new Intent(Cadastro.this, SuasMaterias.class));
             }
         });
     }
